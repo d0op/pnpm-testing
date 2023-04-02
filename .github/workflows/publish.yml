@@ -33,5 +33,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy NPM packages (FIXME)
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm exec npm publish
           
