@@ -6,7 +6,11 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "url": "https://github.com/d0op/pnpm-testing",
+    "type": "git"
   },
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
